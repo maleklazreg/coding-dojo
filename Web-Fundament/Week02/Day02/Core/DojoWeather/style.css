@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #9FC5F8;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    padding: 15px;
+}
+.bar ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    align-items: center;
+    font-weight: bold;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+.navbar{
+    display: flex;
+    gap: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: solid;
+    padding: 10px;
+
+}
+.weather{
+    background-color: #EEEEEE;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.weather p{
+    font-weight: bold;
+}
+.imgw{
+    border-radius: 100%;
+    width: 150px;
+
+
+}
+
+.accept{
+    border: solid;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 855px;
+    font-weight: bold;
+}
+.worning{
+    display: flex;
+    justify-content: center;
+
+}
+.accept button{
+    background-color: #9FC5F8;
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px 2PX;
+}
+.temp{
+    display: flex;
+    gap: 40px;
+}
+.red{
+    color: #CF2A27;
+}
+.bleu{
+    color: #2B78E4;
+}
+.bigcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bar{
+    width: 200px;
+}
+.bigmain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}

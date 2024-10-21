@@ -1,0 +1,36 @@
+#face {
+    background-color: #f3f3f3;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 6px solid black;
+    position: relative;
+}
+
+#hour, #minutes, #seconds {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom center; /* Sets the origin point for rotation */
+}
+
+#seconds {
+    background-color: red;
+    height: 130px;
+    width: 2px;
+    transform: rotate(90deg); /* Initial position for seconds hand */
+}
+
+#hour {
+    background-color: black;
+    height: 100px;
+    width: 8px;
+    transform: rotate(90deg); /* Initial position for hour hand */
+}
+
+#minutes {
+    background-color: grey;
+    height: 120px;
+    width: 4px;
+    transform: rotate(90deg); /* Initial position for minutes hand */
+}

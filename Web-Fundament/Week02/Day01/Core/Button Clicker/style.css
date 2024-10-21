@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.container{
+    margin: 0 auto;
+    width: 900px;
+    background-color: gray;
+    padding: 10px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+.navbar button{
+    background-color: #286FD2;
+    width: 100px;
+    height: 30px;
+}
+.navbar input{
+    width: 450px;
+    height: 25px;
+    border-color: black;
+
+}
+.main{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.ninja{
+    width: 589px;
+    height:200px;
+    border: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+.navbar1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.ninja-right{
+    width: 300px;
+    height: 150Px;
+    border: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.ninja-right button{
+    background-color: #93C47D;
+    color: black;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px 100px;
+
+}
+.likes{
+    background-color: #FFD966;
+    color: black;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 10px 20px;
+
+}
+.smalninja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+
