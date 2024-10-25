@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to thhe Great Number Game!!!</h1>
+        <p>i am thinking of a number between 1 and 100 guess it.</p>
+        <div class="waywa">
+            <h2>Guess the Number!</h2>
+            <form  action="/guess" method="POST">
+                <input type="number" name="guess" required>
+                <button type="submit">Guess</button>
+            </form>
+            {% if feedback %}
+            <h3>{{ feedback }}</h3>
+            {% endif %}
+            <form action="/reset" method="GET">
+                <button type="submit">Play Again</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
