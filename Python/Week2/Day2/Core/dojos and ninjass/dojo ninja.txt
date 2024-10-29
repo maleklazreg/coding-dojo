@@ -1,0 +1,18 @@
+insert into dojos(name) values('comondos'),('jujitsu'),('djoo');
+delete from dojos where name in ('comondos','jujitsu','djoo');
+insert into dojos(name) values('chakra'),('sheee'),('sql');
+selectfrom dojos;
+
+insert into ninja(first_name, last_name ,dojo_id) values('itachi','utchiha',1);
+insert into ninja(first_name, last_name ,dojo_id) values('madara','utchiha1',1);
+insert into ninja(first_name, last_name ,dojo_id) values('sasuke','utchiha2',1);
+
+insert into ninja(first_name, last_name ,dojo_id) values('amand','said',2);
+insert into ninja(first_name, last_name ,dojo_id) values('ehib','chabati',2);
+insert into ninja(first_name, last_name ,dojo_id) values('mahdia','thon',2);
+
+insert into ninja(first_name, last_name ,dojo_id) values('double','fromage',3);
+insert into ninja(first_name, last_name ,dojo_id) values('mayhibch','mlawi',3);
+insert into ninja(first_name, last_name ,dojo_id) values('double','fromage',3);
+
+selectfrom ninja where dojo_id =2;
