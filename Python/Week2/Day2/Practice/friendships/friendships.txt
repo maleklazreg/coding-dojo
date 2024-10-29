@@ -1,0 +1,12 @@
+insert into user (first_name, last_name) values ('amy','giver'),('eli','byers'),('big','bird'),('kermit','thefrog'),('marky','mark'),('leo','lion');
+insert into driendships(user_id, friend_id) value(1,2),(1,4),(1,6);
+insert into driendships(user_id, friend_id) value(2,1),(2,3),(2,5);
+insert into driendships(user_id, friend_id) value(3,2),(3,5);
+insert into driendships(user_id, friend_id) value(4,3);
+insert into driendships(user_id, friend_id) value(5,1),(5,6);
+insert into driendships(user_id, friend_id) value(6,2),(6,3);
+select*from users;
+select*from driendships;
+select users.first_name, users.last_name from users
+join driendships on users.id = driendships.user.id
+join users on driendships.friend_id = users.id where users.id = 1;
