@@ -1,0 +1,31 @@
+insert into users (first_name, last_name) values('jane', 'amsden');
+insert into users (first_name, last_name) values('emily', 'dixon');
+insert into users (first_name, last_name) values('theodore', 'dostoevsk');
+insert into users (first_name, last_name) values('william', 'shapiro');
+insert into users (first_name, last_name) values('leo', 'xiu');
+select*from users;
+insert into books (title) values('c sharp');
+insert into books (title) values('java');
+insert into books (title) values('python');
+insert into books (title) values('php');
+insert into books (title) values('ruby');
+select*from books;
+update books 
+set title = 'c#' where title = 'c sharp';
+update users
+set first_name = 'bill' where id = 4;
+insert into books_has_users(user_id, book_id) values (1,1),(1,2);
+insert into books_has_users(user_id, book_id) values (2,1),(2,2),(2,3);
+insert into books_has_users(user_id, book_id) values (3,1),(3,2),(3,3),(3,4);
+insert into books_has_users(user_id, book_id) values (4,1),(4,2),(4,3),(4,4),(4,5);
+select*from users
+join favourites on favourites.user_id = users_id
+join books on books.id = favourites.book_id where book_id=3;
+delete from books_has_users where user_id = 1 and book_id = 3;
+insert into books_has_users (user_id, book_id) values(5,2);
+select books.title from books
+join books_has_users on books.id = books_has_users.book.id
+where books_has_users.user_id = 3;
+select users.first_name, users.last_name from users 
+join books_has_users on users.id = books_has_users.users_id
+where books_has_users.book_id = 5;
