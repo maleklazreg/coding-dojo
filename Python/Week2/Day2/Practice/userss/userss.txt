@@ -1,0 +1,12 @@
+insert into users (first_name, last_name, email) value ('malek','lazreg','lazregmalek30@gmail.com');
+insert into users (first_name, last_name, email) value ('unconu','unconu','unconu@gmail.com');
+insert into users (first_name, last_name, email) value ('rose','lazreg','lazregrose@gmail.com');
+selectfrom users;
+selectfrom users where email = 'lazregmalek30@gamil.com';
+selectfrom users where id = 3;
+update users 
+set last_name='capter'
+where id=3;
+delete from users where id=2;
+selectfrom users  order by first_name;
+selectfrom users  order by first_name desc;
