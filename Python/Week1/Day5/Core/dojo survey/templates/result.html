@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="container bg-white p-5 rounded shadow">
+        <h1 class="text-center mb-4">Submission Details</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Name:</strong> {{ session['user_name'] }} </li>
+            <li class="list-group-item"><strong>Location:</strong> {{ session['location'] }} </li>
+            <li class="list-group-item"><strong>Language:</strong> {{ session['language'] }} </li>
+            <li class="list-group-item"><strong>Comments:</strong> {{ session['comments'] }} </li>
+        </ul>
+    </div>
+</body>
+</html>
