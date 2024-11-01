@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User {{ user.id }}</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <form action="/users/new">
+        <h1>User {{ user.id }}</h1>
+
+        <p><strong>Full Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Created On:</strong> {{ user.craated_at }}</p>
+        <p><strong>Last Updated:</strong> {{ user.updated_at }}</p>
+    
+        <a href="/users/{{ user.id }}/edit">Edit</a> |
+        <a href="/users/{{ user.id }}/destroy">Delete</a> |
+        <a href="/users">Home</a>
+    </form>
+</body>
+</html>
