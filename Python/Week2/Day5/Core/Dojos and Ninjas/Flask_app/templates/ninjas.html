@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ninja</title>
+</head>
+<body>
+    <h1>Add Ninja</h1>
+    <form action="/ninjas" method="POST">
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="last_name" placeholder="Last Name" required>
+        <select name="dojo_id">
+            {% for dojo in dojos %}
+                <option value="{{ dojo.id }}">{{ dojo.name }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Add Ninja">
+    </form>
+    <a href="/dojos">Back to Dojos</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+html
+Copier le code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ dojo.name }}</title>
+</head>
+<body>
+    <h1>{{ dojo.name }}</h1>
+    <h2>Ninjas</h2>
+    <ul>
+        {% for ninja in dojo.ninjas %}
+            <li>{{ ninja.first_name }} {{ ninja.last_name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/ninjas">Add Ninja</a>
+    <a href="/dojos">Back to Dojos</a>
+</body>
+</html>
