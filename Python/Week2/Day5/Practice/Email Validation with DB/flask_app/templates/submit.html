@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submitted Emails</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>All Submitted Emails</h1>
+    <ul>
+        {% for email in emails %}
+            <li>{{ email.email }}</li>
+        {% endfor %}
+    </ul>
+    <a class="bot" href="/">Back to submit another email</a>
+</body>
+</html>

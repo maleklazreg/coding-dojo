@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Flash message styles */
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8d7da;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* .adds{
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} */
+/* .add:hover{
+    background-color: crimson;
+} */
+.success {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    background-color: #d4edda;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Form and input styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.bot {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bot:hover {
+    background-color: #45a049;
+}
+
+/* Success page styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    font-size: 18px;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+li:hover {
+    background-color: #ddd;
+}
