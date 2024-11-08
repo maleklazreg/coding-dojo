@@ -2,7 +2,7 @@ from flask import render_template, request, redirect, flash
 from flask_app import app
 from flask_app.models.email_model import Email
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def index():
     return render_template('index.html')  # Render the form page when the method is GET
 
