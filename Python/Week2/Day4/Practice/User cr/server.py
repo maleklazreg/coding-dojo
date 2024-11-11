@@ -1,33 +1,27 @@
 from flask import Flask, render_template,request,session,redirect
 from mysqlconnection import connectToMySQL
-from users_model import User
-
-app = Flask(__name__)
-app.secret_key="password123"
-
+from users import User
 
 app = Flask(__name__)
 
-@app.route('/user')
+@app.route('/')
+def index():
+    return redirect('user')
+
+@app.route('/users')
 def users():
-    mysql = connectToMySQL('users_schema') 
-    query = "SELECT * FROM users"
-    users = mysql.query_db(query) 
-    return render_template('users.html', users=users)
+    users = User.get_all()
+    return render_template("users.html", users=users)
 
-@app.route("/user/form",methods=["GET"])
-def display_user_form():
-    return render_template("create.html")
-@app.route("/user/new",methods=["POST"])
-def create_user():
-    new_user={
-        "first_name":request.form["first_name"],
-        "last_name":request.form["last_name"],
-        "email":request.form["email"]
-    }
-    result=User.create_one(new_user)
-    # list_of_todos.append(new_todo)
-    return redirect("/user")
+@app.route('/user/new')
+def new():
+    return render_template("new_user.html")
+
+@app.route('/user/create', methods=['POST'])
+def create():
+    User.save(request.form)
+    return redirect('/users')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read All</title>
+    <title>Create New User</title>
 </head>
 <body>
-    <h1>Read All</h1>
-    <div>
+    <h1>Create New User</h1>
+    <thead>
+        <tr>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+            <th>CREATED AT</th>
+        </tr>
+    </thead>
+    <Tbody>
         {% for user in users %}
-            <div>
-                Name: {{ user.first_name }}, Last Name: {{ user.last_name }}
-            </div>
+        <tr>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.created_at}}</td>
+        </tr>
         {% endfor %}
-    </div>
+    </Tbody>
+    <a href="/user/new">add a user</a>
 </body>
 </html>
