@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_links">
+            <a href="/recipes" class="btn">back to recipes</a>
+            <a href="/">logout</a>
+        </div>
+        <h1>Add a New Recipes</h1>
+        <form action="/recipes/create" method="post">
+            <label for="name">name of recipe:</label>
+            <input type="text" name="name">
+            <label for="name">description:</label>
+            <textarea name="description" id=""></textarea>
+            <label for="name">instruction:</label>
+            <textarea name="instructions" id=""></textarea>
+            <label for="name">date:</label>
+            <input type="date" name="date_cooked">
+            <label for="under_30">Takes Less Than 30 Minutes:</label>
+            <input type="radio" name="under_30" value="1" required> Yes
+            <input type="radio" name="under_30" value="0" required> No
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+</body>
+</html>
